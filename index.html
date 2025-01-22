@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <header class="bg-gray-900 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">Mon Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+                <li><a href="services.html" class="hover:text-gray-400 transition">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-gray-400 transition">Portfolio</a></li>
+                <li><a href="about.html" class="hover:text-gray-400 transition">À propos</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Bienvenue sur mon site freelance</h1>
-        <p>Optimisez vos workflows et automatisez votre backend</p>
+    <!-- Hero Section -->
+    <main class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-4">
+            Optimisez vos workflows &<br>Automatisez votre backend
+        </h1>
+        <p class="text-lg text-gray-300 mb-6">
+            Consultant backend & automatisation | IA - Workflows - Bases de données
+        </p>
+        <a href="contact.html"
+           class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg text-lg transition duration-300">
+            Contactez-moi
+        </a>
     </main>
 
-    <footer>
-        <p>&copy; 2025 - Mon Portfolio Freelance</p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p class="text-sm">&copy; 2025 - Mon Portfolio Freelance</p>
     </footer>
 </body>
 </html>

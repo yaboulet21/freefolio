@@ -4,26 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Freelance Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-<h1>Études de cas</h1>
-    <p>Découvrez mes réalisations et projets concrets.</p>
-</main>
-<footer>
-    <p>&copy; 2025 - Mon Portfolio Freelance</p>
-</footer>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <header class="bg-gray-900 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">Mon Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+                <li><a href="services.html" class="hover:text-gray-400 transition">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-gray-400 transition">Portfolio</a></li>
+                <li><a href="about.html" class="hover:text-gray-400 transition">À propos</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-[400px] flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-4">Études de Cas & Réalisations</h1>
+        <p class="text-lg text-gray-300 max-w-2xl">
+            Découvrez comment j’ai aidé des entreprises à automatiser leurs processus, moderniser leurs infrastructures et exploiter l’IA.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <main class="container mx-auto py-24">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Mes Projets</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Projet 1 -->
+            <div class="relative bg-white shadow-xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="assets/project1.jpg" alt="Automatisation des Factures" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900">Automatisation des Factures</h3>
+                    <p class="text-gray-600 mt-2">
+                        Workflow Make (Integromat) + API Node.js pour automatiser la gestion des factures.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold mt-4 inline-block">Voir plus →</a>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="relative bg-white shadow-xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="assets/project2.jpg" alt="Migration PHP vers Node.js" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900">Migration PHP vers Node.js</h3>
+                    <p class="text-gray-600 mt-2">
+                        Refonte d’un backend PHP en une architecture Node.js moderne et scalable.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold mt-4 inline-block">Voir plus →</a>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="relative bg-white shadow-xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="assets/project3.jpg" alt="Chatbot IA RAG" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-900">Chatbot IA RAG</h3>
+                    <p class="text-gray-600 mt-2">
+                        Intégration de GPT-4 avec un moteur de recherche documentaire intelligent.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold mt-4 inline-block">Voir plus →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-24">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 - Mon Portfolio Freelance | Contact : <a href="mailto:contact@monfreelance.com" class="text-blue-400 hover:text-blue-300">contact@monfreelance.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>

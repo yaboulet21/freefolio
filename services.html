@@ -4,26 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Freelance Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1>Nos Services</h1>
-    <p>Découvrez les services que nous proposons pour améliorer vos projets.</p>
-</main>
-<footer>
-    <p>&copy; 2025 - Mon Portfolio Freelance</p>
-</footer>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <header class="bg-gray-900 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">Mon Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+                <li><a href="services.html" class="hover:text-gray-400 transition">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-gray-400 transition">Portfolio</a></li>
+                <li><a href="about.html" class="hover:text-gray-400 transition">À propos</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-[400px] flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-4">
+            Des solutions performantes pour votre entreprise
+        </h1>
+        <p class="text-lg text-gray-300 max-w-2xl">
+            Automatisation, développement backend, IA & data – optimisez votre infrastructure et gagnez en efficacité.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <main class="container mx-auto py-24">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Mes Services</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Service 1 -->
+            <div class="relative bg-white shadow-xl rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
+                <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white p-4 rounded-full shadow-lg">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M13 16h-1v-4h-1m2-4h.01M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-gray-900">Automatisation des Workflows</h3>
+                <p class="text-gray-600 mt-4">
+                    Make, Zapier, API sur mesure – simplifiez et automatisez vos processus métiers.
+                </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="relative bg-white shadow-xl rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
+                <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white p-4 rounded-full shadow-lg">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M3 10h11M9 21V3m-4 7l4-4 4 4M21 14H10m4-4v10m4-7l-4 4-4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-gray-900">Développement Backend</h3>
+                <p class="text-gray-600 mt-4">
+                    APIs scalables avec Node.js, intégration SQL/MongoDB, migrations legacy.
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="relative bg-white shadow-xl rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
+                <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white p-4 rounded-full shadow-lg">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9.75 15.5L12 13m0 0l2.25 2.5M12 13v6m9-4a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-gray-900">IA & Data</h3>
+                <p class="text-gray-600 mt-4">
+                    Structuration et exploitation des bases de données pour une meilleure prise de décision.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-24">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 - Mon Portfolio Freelance | Contact : <a href="mailto:contact@monfreelance.com" class="text-blue-400 hover:text-blue-300">contact@monfreelance.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>

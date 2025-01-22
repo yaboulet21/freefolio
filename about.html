@@ -4,26 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Freelance Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1>À Propos</h1>
-<p>Consultant backend & automatisation avec une approche rigoureuse</p>
-</main>
-<footer>
-    <p>&copy; 2025 - Mon Portfolio Freelance</p>
-</footer>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <header class="bg-gray-900 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">Mon Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400 transition">Accueil</a></li>
+                <li><a href="services.html" class="hover:text-gray-400 transition">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-gray-400 transition">Portfolio</a></li>
+                <li><a href="about.html" class="hover:text-gray-400 transition">À propos</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-[400px] flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-4">Qui suis-je ?</h1>
+        <p class="text-lg text-gray-300 max-w-2xl">
+            Consultant en backend et automatisation, passionné par l’optimisation des systèmes et l’IA.
+        </p>
+    </section>
+
+    <!-- Présentation -->
+    <main class="container mx-auto py-24">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Image -->
+            <img src="assets/profile.jpg" alt="Photo de profil" class="w-64 h-64 object-cover rounded-full shadow-lg">
+            
+            <!-- Texte -->
+            <div class="max-w-2xl">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Mon parcours</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Avec plusieurs années d’expérience dans le développement backend et l’automatisation des workflows,
+                    j’aide les entreprises à structurer leurs systèmes et optimiser leurs processus.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    Mon expertise couvre **Node.js, SQL/MongoDB, Make, IA et l’intégration API**, avec une approche basée sur 
+                    la rigueur et l’efficacité.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Compétences et valeurs -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-10">Mes valeurs et expertises</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900">🔍 Approche Consulting</h3>
+                    <p class="text-gray-600 mt-2">
+                        Analyse fine des besoins et cadrage précis pour des solutions adaptées.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900">⚡ Efficacité et Rapidité</h3>
+                    <p class="text-gray-600 mt-2">
+                        Un travail rigoureux pour livrer des solutions testées et robustes.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900">🔗 Automatisation et IA</h3>
+                    <p class="text-gray-600 mt-2">
+                        Optimisation des workflows et intelligence artificielle pour booster la productivité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-24">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 - Mon Portfolio Freelance | Contact : 
+                <a href="mailto:contact@monfreelance.com" class="text-blue-400 hover:text-blue-300">contact@monfreelance.com</a>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
